@@ -6,6 +6,17 @@
 
 [![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Monster-ZeroX/Telegraph-Bot)
 
+### Deploy in your vps
+```sh
+git clone https://github.com/Monster-ZeroX/Telegraph-Bot
+cd Telegraph-Bot
+screen -S Telegraph
+pip3 install -r requirements.txt
+# <Create config.py appropriately>
+python3 fzbot.py
+#Ctrl+A Ctrl+D
+```
+
 ### Credits:
 
 [FZBOTS](https://t.me/FZBOTS)
