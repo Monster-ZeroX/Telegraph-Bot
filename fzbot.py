@@ -90,7 +90,7 @@ async def telegraphphoto(client, message):
         await msg.edit_text("Photo size should be less than 5mb!") 
     else:
         await msg.edit_text(f'**Your File Is Successfully Uploaded To Telegraph!\n\n📚https://telegra.ph{response[0]}\n\nJoin @FZBOTS**',
-            disable_web_page_preview=True,
+            disable_web_page_preview=False,
         )
     finally:
         os.remove(download_location)
@@ -122,7 +122,7 @@ async def telegraphgif(client, message):
         await msg.edit_text("Gif size should be less than 5mb!") 
     else:
         await msg.edit_text(f'**Your File Is Successfully Uploaded To Telegraph!\n\n📚https://telegra.ph{response[0]}\n\nJoin @FZBOTS**',
-            disable_web_page_preview=True,
+            disable_web_page_preview=False,
         )
     finally:
         os.remove(download_location)
