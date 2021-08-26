@@ -61,11 +61,11 @@ async def about(client, message):
                chat_id=message.chat.id,
                text="""<b>About Telegraph Bot!</b>
 
-<b>â™ž Developer:</b> <a href="https://t.me/FZBOTS">FZ BOTS ????</a>
+<b>⚜️Developer:</b> <a href="https://t.me/FZBOTS">FZ BOTS🇱🇰</a>
 
-<b>â™ž Language:</b> <a href="https://www.python.org/">Python 3</a>
+<b>🔆Language:</b> <a href="https://www.python.org/">Python 3</a>
 
-<b>â™ž Library:</b> <a href="https://github.com/pyrogram/pyrogram">Pyrogram</a>
+<b>♻️Library:</b> <a href="https://github.com/pyrogram/pyrogram">Pyrogram</a>
 
 <b>@FZBOTS</b>""",
      reply_markup=InlineKeyboardMarkup(
@@ -89,7 +89,7 @@ async def telegraphphoto(client, message):
     except:
         await msg.edit_text("Photo size should be less than 5mb!") 
     else:
-        await msg.edit_text(f'**Uploaded To Telegraph!\n\nðŸ‘‰ https://telegra.ph{response[0]}\n\nJoin @FZBOTS**',
+        await msg.edit_text(f'**Your File Is Successfully Uploaded To Telegraph!\n\n📚https://telegra.ph{response[0]}\n\nJoin @FZBOTS**',
             disable_web_page_preview=True,
         )
     finally:
@@ -105,8 +105,8 @@ async def telegraphvid(client, message):
     except:
         await msg.edit_text("Video size should be less than 5mb!") 
     else:
-        await msg.edit_text(f'**Uploaded To Telegraph!\n\nðŸ‘‰ https://telegra.ph{response[0]}\n\nJoin @FZBOTS**',
-            disable_web_page_preview=True,
+        await msg.edit_text(f'**Your File Is Successfully Uploaded To Telegraph!\n\n📚https://telegra.ph{response[0]}\n\nJoin @FZBOTS**',
+            disable_web_page_preview=False,
         )
     finally:
         os.remove(download_location)
@@ -121,7 +121,7 @@ async def telegraphgif(client, message):
     except:
         await msg.edit_text("Gif size should be less than 5mb!") 
     else:
-        await msg.edit_text(f'**Uploaded To Telegraph!\n\nðŸ‘‰ https://telegra.ph{response[0]}\n\nJoin @FZBOTS**',
+        await msg.edit_text(f'**Your File Is Successfully Uploaded To Telegraph!\n\n📚https://telegra.ph{response[0]}\n\nJoin @FZBOTS**',
             disable_web_page_preview=True,
         )
     finally:
